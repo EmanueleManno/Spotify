@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Codice che mi rende responsive la pagina-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Collegamento del file HTML con il CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--Icona della pagina-->
+    <link rel="icon" href="./img/favicon.ico" type="image/png" />
+    <!--Informazioni aggiuntive-->
+    <meta name="keywords" content="esercizio,boolean,programmare,Spotify" />
+    <meta name="description" content="Provo a fare la Web App di Spotify" />
+    <meta name="author" content="Emanuele Studente Classe 100" />
+    <!--Importazione Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Importazione Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify Web App</title>
+  </head>
+
+  <body>
+    <!--Contenitore in alto comprendente Sidebar,Corpo della pagina e intestazione-->
+    <div class="container up-container">
+      <!--Sidebar della pagina-->
+      <div class="sidebar">
+        <!--Parte superiore della Sidebar-->
+        <div class="sidebar-up">
+          <ul>
+            <!--Spotify-->
+            <li>
+              <i class="fa-brands fa-spotify" style="color: #ffffff"></i
+              ><span class="none white big-size">Spotify</span>
+            </li>
+            <!--Home-->
+            <li>
+              <i class="fa-solid fa-house" style="color: #ffffff"></i
+              ><span class="none white normal-size">Home</span>
+            </li>
+            <!--Cerca-->
+            <li>
+              <i
+                class="opacity fa-solid fa-magnifying-glass"
+                style="color: #ffffff"
+              ></i
+              ><span class="none grey normal-size">Cerca</span>
+            </li>
+            <!--La tua libreria-->
+            <li>
+              <i
+                class="opacity fa-regular fa-rectangle-list"
+                style="color: #ffffff"
+              ></i
+              ><span class="none grey normal-size">La tua libreria</span>
+            </li>
+            <!--Playlist-->
+            <li><span class="none normal-size white">PLAYLIST</span></li>
+            <br />
+            <!--Crea nuova-->
+            <li class="none grey">
+              <i class="fa-regular fa-square-plus"></i
+              ><span class="grey none normal-size">Crea Playlist</span>
+            </li>
+            <!--Altre playlist-->
+            <li><span class="none grey normal-size">Nome Playlist</span></li>
+            <li><span class="none grey normal-size">Nome Playlist</span></li>
+            <li><span class="none grey normal-size">Nome Playlist</span></li>
+          </ul>
+        </div>
+        <!--Parte inferiore della Sidebar-->
+        <div class="sidebar-down">
+          <ul>
+            <!--Installa App-->
+            <li>
+              <i
+                class="opacity fa-regular fa-circle-down"
+                style="color: #ffffff"
+              ></i
+              ><span class="none grey normal-size">Installa App</span>
+            </li>
+            <!--Profilo-->
+            <li>
+              <i class="fa-regular fa-circle-user" style="color: #ffffff"></i
+              ><span class="none white normal-size">John Doe</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Corpo principale della pagina-->
+      <main>
+        <!--Intestazione della pagina-->
+        <header>
+          <div class="header-btn">EFFETTUA L'UPGRADE</div>
+        </header>
+
+        <!--Contenuto della pagina-->
+        <div class="content">
+          <!--Menù di navigazione in alto-->
+          <div class="main-navbar">
+            <ul>
+              <li class="border-bottom-hover">IN EVIDENZA</li>
+              <li class="border-bottom-hover">PODCAST</li>
+              <li class="border-bottom-hover">CLASSIFICHE</li>
+              <li class="border-bottom-hover">GENERI E MOOD</li>
+              <li class="border-bottom-hover">NUOVE USCITE</li>
+              <li class="border-bottom-hover">SCOPRI</li>
+            </ul>
+          </div>
+
+          <!--Riproduzioni recenti-->
+          <div class="recently-played">
+            <!--Titolo sezione-->
+            <h2 class="white">Recently Played</h2>
+            <!--Contenitore delle card-->
+            <div class="music-container">
+              <!--Prima card-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/metal_lifting.jpg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Heavy Metal</div>
+                <!--Sottotitoletto-->
+                <div class="music-card-subtitle">Subtitile</div>
+              </div>
+
+              <!--Seconda card-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/stranger.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Stranger Things, vol.1</div>
+                <!--Sottotitoletto-->
+                <div class="music-card-subtitle">
+                  Kyle Dixon e Micheal Stein
+                </div>
+              </div>
+
+              <!--Terza card-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/aquietplace.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">A Quiet Place</div>
+                <!--Sottotitoletto-->
+                <div class="music-card-subtitle">Subtitile</div>
+              </div>
+
+              <!--Quarta card-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/split.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Split</div>
+                <!--Sottotitoletto-->
+                <div class="music-card-subtitle">Subtitile</div>
+              </div>
+
+              <!--Quinta card-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/cure.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">A Cure For Welness</div>
+                <!--Sottotitoletto-->
+                <div class="music-card-subtitle">Subtitile</div>
+              </div>
+
+              <!--Sesta card-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/sinister.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Heavy Metal</div>
+                <!--Sottotitoletto-->
+                <div class="music-card-subtitle">Subtitile</div>
+              </div>
+            </div>
+          </div>
+
+          <!--Create for you-->
+          <div class="create-for-you">
+            <!--Titolo sezione-->
+            <h2 class="white">Creato per Johh Doe</h2>
+            <h3 class="grey">
+              Più ascolti, più accurati saranno i suggerimenti
+            </h3>
+            <!--Contenitore delle card-->
+            <div class="music-container">
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/radar.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Release Radar</div>
+              </div>
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/mixdaily.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Daily Mix</div>
+              </div>
+            </div>
+          </div>
+
+          <!--Artisti popolari-->
+          <div class="popular-artist">
+            <!--Titolo sezione-->
+            <h2 class="white">Artisti più popolari</h2>
+            <h3 class="grey">
+              Più ascolti, più accurati saranno i suggerimenti
+            </h3>
+            <!--Contenitore delle card-->
+            <div class="music-container">
+              <!--Lana del Rey-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/youg.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Lana Del Rey</div>
+              </div>
+
+              <!--Ludovico Einaudi-->
+              <div class="music-card">
+                <!--Immagine della card-->
+                <div class="music-card-img">
+                  <!--Play in hover-->
+                  <div class="hover-play">
+                    <i class="white fa-regular fa-circle-play"></i>
+                  </div>
+                  <!--Immagine-->
+                  <img src="./img/einaudi.jpeg" />
+                </div>
+                <!--Titoletto-->
+                <div class="music-card-title">Ludovico Einaudi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!--Footer della pagina-->
+    <footer class="container">
+      <!--Contenitore del footer-->
+      <div class="footer-container">
+        <!--Navbar di sinistra-->
+        <div class="footer-navbar-left">
+          <!--Contenuto della navbar di sinistra-->
+          <div class="left-content">
+            <!--Immagine-->
+            <img src="./img/sinister.jpeg" alt="Sinister" />
+          </div>
+          <!--Contenuto della navbar di sinistra-->
+          <div class="left-content">
+            <!--Lista-->
+            <ul>
+              <!--Elemento lista-->
+              <li class="white">Sinister</li>
+              <!--Elemento lista-->
+              <li class="grey">Brano</li>
+              <!--Elemento lista-->
+              <li class="grey">Nome</li>
+            </ul>
+          </div>
+          <!--Contenuto della navbar di sinistra-->
+          <div class="left-content">
+            <!--Icona-->
+            <i class="grey fa-regular fa-heart"></i>
+            <br />
+            <!--Icona-->
+            <i class="grey fa-regular fa-folder"></i>
+          </div>
+        </div>
+
+        <!--Navbar centrale-->
+        <div class="footer-navbar-center">
+          <!--Contenuto della navbar centrale-->
+          <div class="center-content">
+            <!--Icona-->
+            <i class="white fa-solid fa-shuffle"></i>
+            <!--Icona-->
+            <i class="white fa-solid fa-backward-fast"></i>
+            <!--Icona-->
+            <i class="white fa-regular fa-circle-play"></i>
+            <!--Icona-->
+            <i class="white fa-solid fa-forward-fast"></i>
+            <!--Icona-->
+            <i class="white fa-solid fa-arrow-rotate-right"></i>
+          </div>
+          <!--Contenuto della navbar centrale-->
+          <div class="center-content">
+            <!--Minutaggio-->
+            <div class="white">0:25</div>
+            <!--Barra di progresso-->
+            <div class="progress-bar">
+              <!--Valore della barra di progresso-->
+              <div class="value"></div>
+            </div>
+            <!--Minutaggio-->
+            <div class="white">4:35</div>
+          </div>
+        </div>
+
+        <!--Navbar di destra-->
+        <div class="footer-navbar-right">
+          <!--Icona-->
+          <i class="white fa-solid fa-list"></i>
+          <!--Icona-->
+          <i class="white fa-solid fa-display"></i>
+          <!--Icona-->
+          <i class="white fa-solid fa-volume-high"></i>
+          <!--Barra del volume-->
+          <div class="progress-bar">
+            <!--Valore-->
+            <div class="value"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
